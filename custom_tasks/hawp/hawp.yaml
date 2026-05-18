@@ -1,0 +1,19 @@
+task: hawp
+dataset_path: json
+dataset_kwargs:
+  data_files: "hawp/dataset/hawp.json"
+test_split: train
+doc_to_text: "{{Problem}}\nकृपया केवल संख्यात्मक उत्तर दें। (Please provide only the numerical answer.)"
+doc_to_target: !function utils.compute_target
+output_type: generate_until
+target_delimiter: ""
+generation_kwargs:
+  until: ["\n"]
+  do_sample: false
+  temperature: 0.0
+metric_list:
+  - metric: !function utils.hawp_metric
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

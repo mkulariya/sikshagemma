@@ -138,5 +138,4 @@ sikshagemma/
 └── custom_tasks/                  # lm eval tasks
 └── inspect_tasks/                 # inspect-ai tasks
 └── utils/                         # util scripts
-└── model_weights/                 # model weight files, stage1-2 and merged stage 1-2
 ```

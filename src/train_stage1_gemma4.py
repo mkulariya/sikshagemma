@@ -24,7 +24,7 @@ from unsloth.chat_templates import get_chat_template, standardize_sharegpt
 
 
 DEFAULT_MODEL = "unsloth/gemma-4-E4B-it"
-DEFAULT_DATASET_PATH = "gyandeep_stage1_training_deduped.jsonl"
+DEFAULT_DATASET_PATH = "sikshagemma_stage1_training_deduped.jsonl"
 DEFAULT_OUTPUT_DIR = "stage1_gemma4_e4b"
 DEFAULT_MAX_SEQ_LENGTH = 4096
 RANDOM_SEED = 3407
